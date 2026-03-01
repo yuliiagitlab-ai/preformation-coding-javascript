@@ -10,8 +10,8 @@ Tip : Pense à comment "additionner" des chaînes de caractères. Le plus import
 pas oublier d'inclure le caractère qui sépare le prénom du nom.*/
 
 
-let firstName = Yulia;
-let lastName = Korr;
+let firstName = "Yulia";
+let lastName = "Korr";
 let fullName = firstName + " " + lastName;
 
 console.log(`Fullname: ${fullName}`);
@@ -27,9 +27,9 @@ Tip : Utilise les apostrophes inversées (backticks ``) pour construire ta phras
 peux-tu insérer la valeur d'une variable directement à l'intérieur de ce type de chaîne ?*/
 
 
-let name = Sarah;
+let name = "Sarah";
 let age = 30;
-let city = Brussels;
+let city = "Brussels";
 
 console.log(`Bonjour, je m'appelle ${name}, j'ai ${age} ans et j'habite à ${city}.`);
 console.log("Bonjour, je m'appelle " + name + ", j'ai " + age + " ans et j'habite à " + city + ".");
@@ -88,6 +88,9 @@ let resultat = sentence.slice(
 );
 
 console.log(resultat);
+
+// let start = sentence.indexOf("JavaScript");
+// let resultat = sentence.slice(start, start + "JavaScript".length);
 
 
 /* Exercice 6

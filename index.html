@@ -11,21 +11,47 @@
     <select id="scriptSelector">
         <option value="JS/00_basics_js.js">Basics</option>
         <option value="JS/01_strings_js.js">Strings</option>
+        <option value="JS/02_strings_js.js">Strings-2</option>
+        <option value="JS/03_strings_js.js">Strings-3</option>
         <option value="JS/04_numbers_js.js">Numbers</option>
+        <option value="JS/05_numbers_js.js">Numbers-2</option>
+        <option value="JS/06_numbers_math_js.js">Numbers-math</option>
+        <option value="JS/07_booleens_js.js">Booleens</option>
+        <option value="JS/08_conditions_js.js">Conditions</option>
+        <option value="JS/09_conditions_js.js">Conditions</option>
+        <option value="JS/10_arrays_js.js">Arrays</option>
+        <option value="JS/11_objects_js.js">Objects</option>
+        <option value="JS/12_for_loops_js.js">For_loops</option>
+        <option value="JS/13_loop_number-game_js.js">Loop_Number-game</option>
+        <option value="JS/14_loop_toDoList_js.js">Loop_toDOList</option>
+        <option value="JS/15_functions_js.js">Functions</option>
+        <option value="JS/16_functions_js.js">Functions-2</option>
+        <option value="JS/17_algos_js.js">Algos</option>
+        <option value="JS/18_general_exo_js.js">General_exo</option>
     </select>
 
     <button onclick="loadScript()">Run</button>
 
-    <script>
-        function loadScript() {
-            const oldScript = document.getElementById("dynamicScript");
-            if (oldScript) oldScript.remove();
+    <div style="margin-top:12px;">
+    <iframe id="runner" style="width:100%;height:300px;border:1px solid #ccc;"></iframe>
+    </div>
 
-            const script = document.createElement("script");
-            script.src = document.getElementById("scriptSelector").value;
-            script.id = "dynamicScript";
-            document.body.appendChild(script);
-        }
+    <script>
+    function loadScript() {
+        const file = document.getElementById("scriptSelector").value;
+
+        // NEW fresh iframe every run (clean JS environment)
+        const iframe = document.getElementById("runner");
+        iframe.srcdoc = `
+        <!doctype html>
+        <html>
+        <head><meta charset="utf-8"></head>
+        <body>
+            <script src="${file}"><\/script>
+        </body>
+        </html>
+        `;
+    }
     </script>
 </body>
 </html>
