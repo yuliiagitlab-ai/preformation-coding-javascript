@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Practice</title>
+</head>
+<body>
+    <h2>Select a script to run:</h2>
+
+    <select id="scriptSelector">
+        <option value="JS/00_basics_js.js">Basics</option>
+        <option value="JS/01_strings_js.js">Strings</option>
+        <option value="JS/04_numbers_js.js">Numbers</option>
+    </select>
+
+    <button onclick="loadScript()">Run</button>
+
+    <script>
+        function loadScript() {
+            const oldScript = document.getElementById("dynamicScript");
+            if (oldScript) oldScript.remove();
+
+            const script = document.createElement("script");
+            script.src = document.getElementById("scriptSelector").value;
+            script.id = "dynamicScript";
+            document.body.appendChild(script);
+        }
+    </script>
+</body>
+</html>
