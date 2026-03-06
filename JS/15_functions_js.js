@@ -15,6 +15,7 @@ Consigne :
 À l'intérieur, affichez dans la console, pour chaque dé, un message du type :
 Exemple attendu pour (6, 5) (les nombres doivent être aléatoires, bien sûr) :*/
 
+console.log("Exercice 1: Lancer des dés.");
 
 function rollDice(faces, times) {
   for (let i = 1; i <= times; i++) {
@@ -26,10 +27,16 @@ function rollDice(faces, times) {
 rollDice(6, 5);
 
 // Version avec prompt et vérification des valeurs saisies par l'utilisateur:
+console.log("Version avec prompt et vérification des valeurs saisies par l'utilisateur:");
 
 function lancerDeDes() {
-  let faces = Number(prompt("Combien de faces ?"));
+  let faces = Number(prompt("Lancer des dés:\nCombien de faces ?"));
   let times = Number(prompt("Combien de lancers ?"));
+
+  if (isNaN(faces) || faces <= 0 || isNaN(times) || times <= 0) {
+    console.log("Veuillez entrer des nombres valides.");
+    return;
+  }
 
   for (let i = 1; i <= times; i++) {
     const resultat = Math.floor(Math.random() * faces) + 1;
@@ -45,6 +52,8 @@ vous souhaitez la répéter. Ensuite, affichez dans la console le résultat.
 
 Exemple :
 ● Note : N'oubliez pas de vérifier que le nombre est bien un nombre.*/
+
+console.log("Exercice 2: Répéter une chaîne de caractères.");
 
 function repeat(str, times) {
   // Vérification que times est bien un nombre positif
@@ -67,10 +76,9 @@ repeat("$", 5);
 
 /* 3. Présentation par prénom et initiale du nom
 Écrivez une fonction qui prend en paramètres un firstName et un lastName et affiche le nom
-complet avec le lastName sous forme d'initiale.
+complet avec le lastName sous forme d'initiale. */
 
-Exemple :*/
-
+console.log("Exercice 3: Présentation par prénom et initiale du nom.");
 
 function greet(firstname, lastname) {
   return `This is ${firstname} ${lastname[0]}.`;
@@ -78,13 +86,15 @@ function greet(firstname, lastname) {
 
 console.log(greet("Yulia", "Korr"));
 
+// Result: This is Yulia K.
 
-/*4. Addition de deux nombres
+
+/* 4. Addition de deux nombres
 Écrivez une fonction simple qui prend deux nombres et les additionne.
 Ensuite, stockez le résultat de la fonction dans une variable et affichez dans la console la valeur
-de cette variable.
+de cette variable. */
 
-Exemple :*/
+console.log("Exercice 4: Addition de deux nombres.");
 
 function addition(a, b) {
   const resultat = a + b;
@@ -96,7 +106,9 @@ addition(34, 25);
 
 
 /* 5. Exercice mental
-Réfléchissez à la sortie dans la console du code suivant :
+Réfléchissez à la sortie dans la console du code suivant:  */
+
+console.log("Exercice 5: Exercice mental.");
 
 function logs() {
   console.log("Hello");
@@ -110,11 +122,10 @@ const myVariable = logs();
 
 console.log(myVariable);
 
-Testez-le et voyez si vous aviez raison. Si ce n'est pas le cas, essayez de comprendre
-pourquoi.
+// Testez-le et voyez si vous aviez raison. Si ce n'est pas le cas, essayez de comprendre pourquoi.
 
-N'oubliez pas : lorsque vous mettez des parenthèses après une fonction, elle s'exécute
-automatiquement, même si vous l'affectez à une variable.*/
+// N'oubliez pas : lorsque vous mettez des parenthèses après une fonction, elle s'exécute
+// automatiquement, même si vous l'affectez à une variable.*/
 
 
 // La sortie dans la console sera :
@@ -143,6 +154,8 @@ isShortWeather(13);  // false
 isShortWeather(27);  // true
 isShortWeather(-7);  // false */
 
+console.log("Exercice 6: Fonction pour déterminer le temps vestimentaire.");
+
 
 function isShortWeather(temperature) {
   return temperature >= 24;                    // retourne true
@@ -164,6 +177,7 @@ lastElement([3, 5, 7]); // 7
 lastElement([1]);       // 1
 lastElement([]);        // null */
 
+console.log("Exercice 7: Dernier élément d'un tableau.");
 
 function lastElement(array) {
   if (array.length === 0) {
@@ -194,6 +208,8 @@ de chaîne) et la concaténer avec le reste de la chaîne (en utilisant une mét
 comme slice() pour omettre la première lettre).*/
 
 
+console.log("Exercice 8: Capitaliser une chaîne.");
+
 function capitalize(str) {
   if (str.length === 0) {
     return "";
@@ -211,6 +227,7 @@ console.log(capitalize("squid"));        // "Squid"
 
 
 // Version simple en une seule ligne:
+console.log("Version simple en une seule ligne:");
 
 function capitalize(str) {
   return str.charAt(0).toUpperCase() + str.slice(1);
@@ -222,6 +239,7 @@ console.log(capitalize("squid"));        // "Squid"
 
 
 // Version sécurisée avec vérification du type et gestion des cas vides:
+console.log("Version sécurisée avec vérification du type et gestion des cas vides:");
 
 function capitalize(str) {
   if (!str || typeof str !== "string") {
@@ -255,6 +273,8 @@ zéro.
 ○ Parcourez le tableau et pour chaque élément, ajoutez-le à la variable total.
 ○ Une fois tous les éléments ajoutés, retournez total.*/
 
+
+console.log("Exercice 9: Somme des éléments d'un tableau.");
 
 function sumArray(numbers) {
   if (!Array.isArray(numbers)) {
@@ -302,6 +322,8 @@ Ces exercices couvrent différents aspects de la création et de l'utilisation d
 JavaScript, y compris la manipulation d'arguments, le retour de valeurs, et l'exécution répétée
 de tâches. Bonne programmation !*/
 
+
+console.log("Exercice 10: Jour de la semaine.");
 
 function returnDay(num) {
   const days = [

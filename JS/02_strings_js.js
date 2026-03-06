@@ -9,7 +9,8 @@ Consignes :
 
 let text = "Bonjour le MONDE !";
 
-console.log(text.toLowerCase());
+console.log("\nExercice 1:");
+console.log(`"Bonjour le MONDE !" ==> ${text.toLowerCase()}`);
 
 
 /* Exercice 2 : Extraction d’une sous-chaîne avec slice
@@ -24,7 +25,8 @@ Consignes :
 let phrase = "JavaScript est génial !";
 let extract = phrase.slice(15, 20);
 
-console.log(extract);
+console.log("\nExercice 2:");
+console.log(`Une partie extraite: ${extract}`);
 
 
 /* Exercice 3 : Remplacement d’un mot avec replace
@@ -39,7 +41,8 @@ Consignes :
 
 let message = "J'aime les pommes";
 
-console.log(message.replace("pommes", "bananes"));
+console.log("\nExercice 3:");
+console.log(`"J'aime les pommes" ==> ${message.replace("pommes", "bananes")}`);
 
 
 /* Exercice 4 : Division d’une chaîne en tableau avec split
@@ -53,6 +56,7 @@ Consignes :
 
 let liste = "rouge vert bleu";
 
+console.log("\nExercice 4:");
 console.log(liste.split(","));
 
 
@@ -70,8 +74,9 @@ Exemple de code :
 
 
 let texte = "Hello WORLD, bienvenue en JavaScript!";
-let resultat = texte.toLowerCase().slice(6, 10);
+let resultat = texte.toLowerCase().slice(6, 11);
 
+console.log("\nExercice 5:");
 console.log(resultat);
 
 
@@ -91,6 +96,7 @@ Votre mission :
 
 let text2 = "HELLO";
 
+console.log("\nExercice 6:");
 console.log(text2.toLowerCase()); // "()" 
 
 
@@ -112,6 +118,7 @@ Votre mission :
 let phrase2 = "Hello, world!";
 let sub = phrase2.slice(7, 12);  // ";" => ","
 
+console.log("\nExercice 7:");
 console.log(sub);
 
 
@@ -132,6 +139,7 @@ Votre mission :
 
 let sentence = "Les chats sont mignons";
 
+console.log("\nExercice 8:");
 console.log(sentence.replace("chats", "chiens")); // Les guillemets sont ajoutés
 
 
@@ -151,6 +159,8 @@ Votre mission :
 // split() transforme une chaîne en tableau.
 
 let fruits = "pomme, banane, cerise".split(", ");  // "splitt" => "split"
+
+console.log("\nExercice 9:");
 console.log(fruits);
 
 // Résultat attendu : ["pomme", "banane", "cerise"]
@@ -177,6 +187,7 @@ let result = text3
   .slice(0, 10)                      // "slic" => "slice"
   .replace("javascript", "JS");
 
+console.log("\nExercice 10:");
 console.log(result);
 
 // Résultat attendu : JS

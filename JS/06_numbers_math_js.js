@@ -13,12 +13,13 @@ Affiche dans la console :
 
 
 let prixTTC = 19.99;
-console.log(prixTTC);
+console.log(`Ex #1. Le prix TTC: ${prixTTC}`);
+
 // 1. Valeur arrondie à l'entier le plus proche
-console.log(Math.round(prixTTC)); // Résultat : 20
+console.log(`Math.round: ${Math.round(prixTTC)}`); // Résultat : 20
 
 // 2. Valeur arrondie à l'entier supérieur
-console.log(Math.ceil(prixTTC)); // Résultat : 20
+console.log(`Math.ceil: ${Math.ceil(prixTTC)}`); // Résultat : 20
 
 // 3. Résultat de l'opération Math.round(prixTTC * 100) / 100
 console.log(Math.round(prixTTC * 100) / 100); // Résultat : 19.99
@@ -45,6 +46,7 @@ const scoreB = 120;
 const scoreC = 89;
 
 // Affichage du score le plus élevé
+console.log("Exercise 2:");
 console.log("Score le plus élevé :", Math.max(scoreA, scoreB, scoreC)); // Résultat : 120
 
 // Affichage du score le plus bas
@@ -73,6 +75,7 @@ const sommeCarrés = carréA + carréB; // 25 + 144 = 169
 const hypotenuse = Math.sqrt(sommeCarrés); // √169 = 13
 
 // Affichage du résultat
+console.log("Exercise 3:");
 console.log("L'hypoténuse est :", hypotenuse); // Résultat : 13
 
 
@@ -90,7 +93,8 @@ let min = 1;
 let max = 6;
 
 let de = Math.floor(Math.random() * (max-min+1)) + min;
-console.log(de);
+console.log("Exercise 4:");
+console.log(`De: ${de}`);
 
 
 /* 5. Intervalle aléatoire paramétré
@@ -112,6 +116,7 @@ let max1 = 20;
 let nombreAleatoire = Math.floor(Math.random() * (max1 - min1 + 1)) + min1;
 
 // Affichage du résultat
+console.log("Exercise 5:");
 console.log("Nombre aléatoire entre", min1, "et", max1, ":", nombreAleatoire);
 
 
@@ -130,6 +135,7 @@ la valeur était négative (-45.897).*/
 let timeElapsed = 45.897;
 
 // Utilisation de Math.trunc pour obtenir la partie entière
+console.log("Exercise 6:");
 let secondesCompletes = Math.trunc(timeElapsed);
 console.log("Secondes complètes (Math.trunc) :", secondesCompletes); // Résultat : 45
 
@@ -158,6 +164,7 @@ let r = 5.5;
 let aire = Math.PI * Math.pow(r, 2);
 
 // Affichage du résultat brut
+console.log("Exercise 7:");
 console.log("Aire du cercle :", aire);
 
 
@@ -181,6 +188,7 @@ let deltaX = (xB - xA) ** 2;
 let deltaY = (yB - yA) ** 2;
 
 let resultat = Math.sqrt(deltaX + deltaY);
+console.log("Exercise 8:");
 console.log(`Distance entre deux points: ${resultat}`);
 
 
@@ -205,6 +213,7 @@ let difference = anneeNaissanceUser - anneeActuelle;
 let age = Math.abs(difference);
 
 // Affichage de l'âge
+console.log("Exercise 9:");
 console.log("L'âge est :", age); // Résultat : 29
 
 
@@ -226,4 +235,5 @@ let dixPuissanceTrois = Math.pow(10, 3); // 10^3 = 1000
 let estSuperieur = deuxPuissanceDix > dixPuissanceTrois;
 
 // Affichage du résultat de la comparaison
+console.log("Exercise 10:");
 console.log("2^10 est-il supérieur à 10^3 ?", estSuperieur); // Résultat : true

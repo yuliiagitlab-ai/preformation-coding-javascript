@@ -14,6 +14,7 @@ let firstName = "Yulia";
 let lastName = "Korr";
 let fullName = firstName + " " + lastName;
 
+console.log("Exercice 1:");
 console.log(`Fullname: ${fullName}`);
 
 
@@ -31,6 +32,7 @@ let name = "Sarah";
 let age = 30;
 let city = "Brussels";
 
+console.log("\nExercice 2:");
 console.log(`Bonjour, je m'appelle ${name}, j'ai ${age} ans et j'habite à ${city}.`);
 console.log("Bonjour, je m'appelle " + name + ", j'ai " + age + " ans et j'habite à " + city + ".");
 
@@ -49,7 +51,8 @@ la relation entre la propriété .length et la position (l'index) du tout dernie
 
 let mot = "Programmation";
 
-console.log(`Le nombre total de caractères dans le mot: ${mot.length}.`);
+console.log("\nExercice 3:");
+console.log(`Le nombre total de caractères dans le mot "${mot}": ${mot.length}.`);
 console.log(`La première lettre du mot: ${mot[0]}`);
 console.log(`La dernière lettre du mot: ${mot[mot.length - 1]}`);
 
@@ -66,6 +69,7 @@ assez explicites !*/
 
 let mixedString = "bOnJoUr Le MoNdE";
 
+console.log("\nExercice 4:");
 console.log(`Majuscules: ${mixedString.toUpperCase()}.`);
 console.log(`Minuscules: ${mixedString.toLowerCase()}.`);
 
@@ -87,6 +91,7 @@ let resultat = sentence.slice(
     sentence.indexOf("JavaScript") + 10
 );
 
+console.log("\nExercice 5:");
 console.log(resultat);
 
 // let start = sentence.indexOf("JavaScript");
@@ -106,7 +111,8 @@ extrémités d'une chaîne.*/
 let userEmail = " john.doe@email.com ";
 let cleanedEmail = userEmail.trim();
 
-console.log(cleanedEmail);
+console.log("\nExercice 6:");
+console.log(`Cleaned email: ${cleanedEmail}`);
 
 
 /* Exercice 7
@@ -121,7 +127,8 @@ le remplacer par un autre.*/
 let originalSentence = "Le chat boit du lait.";
 let changedSentence = originalSentence.replace("chat", "chien");
 
-console.log(changedSentence);
+console.log("\nExercice 7:");
+console.log(`Changed sentence: ${changedSentence}`);
 
 
 /* Exercice 8
@@ -135,7 +142,8 @@ ferais-tu pour commencer la recherche depuis la fin de la chaîne plutôt que de
 let word = "abracadabra";
 let lastIndex = word.lastIndexOf("a");
 
-console.log(lastIndex); 
+console.log("\nExercice 8:");
+console.log(`Last index of "a" in "abracadabra": ${lastIndex}`); 
 
 
 /* Exercice 9
@@ -159,6 +167,7 @@ let correction2 = correctTrim.slice(1).toLowerCase(); // Reste du mot en minuscu
 
 let resultatName = correction1 + correction2;
 
+console.log("\nExercice 9:");
 console.log(resultatName); // "Alexander"
 
 // Version plus courte:
@@ -187,4 +196,5 @@ let item = "pizza";
 let quantity = 2;
 let price = 15;
 
+console.log("\nExercice 10:");
 console.log(`La commande de ${quantity} ${item}s coûte ${quantity * price} dollars.`);

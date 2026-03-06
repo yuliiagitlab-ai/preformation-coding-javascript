@@ -29,7 +29,8 @@ function oddishOrEvenish(number) {
   }
 }
 
-console.log(oddishOrEvenish(1234));
+console.log("Exercice 1: Oddish ou Evenish.");
+console.log(`1234: ${oddishOrEvenish(1234)}`);
 
 // Version avec split() pour créer un tableau de chiffres
 
@@ -43,6 +44,8 @@ function oddishOrEvenish(nmbr) {
 
   return sum % 2 === 0 ? "Evenish" : "Oddish";
 }
+
+console.log(`12345: ${oddishOrEvenish(12345)}`);
 
 
 /* Exercice 2 : 7 boom !
@@ -62,6 +65,7 @@ function sevenBoom(array) {
   return "There is no 7 in the array";
 }
 
+console.log("Exercice 2: 7 boom !");
 console.log(sevenBoom([1, 5, 7, 10]));
 console.log(sevenBoom([1, 5, 6, 10]));
 console.log(sevenBoom([1, 5, 57, 10]));
@@ -117,7 +121,9 @@ function fizzBuzz (num) {
     return;
 }
 
+console.log("Exercice 3: The FizzBuzz");
 console.log(fizzBuzz(20));
+
 
 /* Exercice 4 : Compter les valeurs true
 
@@ -137,6 +143,7 @@ function countTrue (array) {
     return sumTrue;
 }
 
+console.log("Exercice 4: Compter les valeurs true");
 console.log(countTrue([true, false, true, false, false]));
 console.log(countTrue([false, false, false, false]));
 console.log(countTrue([]));

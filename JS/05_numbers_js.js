@@ -15,7 +15,7 @@ let différence = num1 - num2;
 let produit = num1 * num2;
 let quotient = num1 / num2;
 
-console.log(`Exercice 1 : Opérations mathématiques de base:`);
+console.log(`Ex #1 : Opérations mathématiques de base:`);
 console.log(`Le somme de ${num1} et ${num2} est ${somme}
 \n Le difference de ${num1} et ${num2} est ${différence}
 \n Le produit de ${num1} et ${num2} est ${produit}
@@ -30,7 +30,7 @@ valeur dans une variable decimalNumber. Utilisez Math.round() pour arrondir le n
 à l'entier le plus proche et affichez le résultat avec alert.*/
 
 
-let decimalNumber = parseFloat(prompt("Exercice 2 : Arrondir un nombre\nEntrez un nombre décimal:").replace(",", "."));
+let decimalNumber = parseFloat(prompt("Ex #2 : Arrondir un nombre\nEntrez un nombre décimal:").replace(",", "."));
 let entier = Math.round(decimalNumber);
 
 alert(`l'entier de decimal ${decimalNumber} que vous avez choisi est ${entier}.`);
@@ -44,8 +44,8 @@ chaîne en nombre en utilisant Number() ou parseFloat(), puis affichez le type e
 valeur avec console.log.*/
 
 
-let stringNumber = parseFloat(prompt("Exercice 3 : Conversion de chaîne en nombre\nEntrez un nombre:"));
-console.log("Exercice 3 : Conversion de chaîne en nombre:");
+let stringNumber = parseFloat(prompt("Ex #3 : Conversion de chaîne en nombre\nEntrez un nombre:"));
+console.log("Ex #3 : Conversion de chaîne en nombre:");
 console.log(`Your number is ${stringNumber}.`);
 
 
@@ -57,7 +57,7 @@ console.log.*/
 
 
 let randomNumber = Math.floor(Math.random()*100+1);
-console.log("Exercice 4 : Nombre aléatoire:");
+console.log("Ex #4 : Nombre aléatoire:");
 console.log(`The random number is ${randomNumber}.`);
 
 
@@ -74,7 +74,7 @@ let numberExponent = 5;
 let resultatPuissance = numberBase ** numberExponent;
 let resultatPow = Math.pow(numberBase, numberExponent);
 
-console.log("Exercice 6 : Calcul de la puissance d'un nombre");
+console.log("Ex #6 : Calcul de la puissance d'un nombre");
 console.log(`Le resultat de la puisance de nombre ${numberBase} exponant ${numberExponent} avec ** est: ${resultatPuissance}`);
 console.log(`Le resultat de la puisance de nombre ${numberBase} exponant ${numberExponent} avec Math.pow est: ${resultatPow}`);
 
@@ -91,7 +91,7 @@ let b = 62;
 let c = 34;
 
 let maxNumber = Math.max(a, b, c);
-console.log("Exercice 7 : Trouver le plus grand nombre:");
+console.log("Ex #7 : Trouver le plus grand nombre:");
 console.log(`Le plus grand nombre entre ${a}, ${b}, ${c} est: ${maxNumber}.`);
 
 
@@ -102,7 +102,7 @@ valeur dans une variable decimalNumber. Formatez le nombre avec deux décimales 
 affichez-le avec alert.*/
 
 
-let decimalNumber2 = prompt("Exercice 8 : Formater un nombre avec deux décimales\nEntrez un nombre décimal:");
+let decimalNumber2 = prompt("Ex #8 : Formater un nombre avec deux décimales\nEntrez un nombre décimal:");
 let n = parseFloat(decimalNumber2.replace(",", "."));
 let decimalFormated = n.toFixed(2);
 
@@ -116,10 +116,10 @@ une variable userNumber. Utilisez Number.isInteger() pour vérifier si le nombre
 entier, puis affichez le résultat avec console.log.*/
 
 
-let userNumber = Number(prompt(`Exercice 9 : Vérification si un nombre est entier\nEntrer un nombre:`));
+let userNumber = Number(prompt(`Ex #9 : Vérification si un nombre est entier\nEntrer un nombre:`));
 let isInteger = Number.isInteger(userNumber);
 
-console.log("Exercice 9 : Vérification si un nombre est entier:");
+console.log("Ex #9 : Vérification si un nombre est entier:");
 console.log(`Nombre "${userNumber}" est entier: ${isInteger}.`);
 
 
@@ -130,7 +130,7 @@ dans une variable positiveNumber. Utilisez Math.sqrt() pour calculer la racine c
 du nombre et affichez le résultat avec alert.*/
 
 
-let positiveNumber = Number(prompt(`Exercice 10 : Calcul de la racine carrée\nEntrez un nombre positif:`));
+let positiveNumber = Number(prompt(`Ex #10 : Calcul de la racine carrée\nEntrez un nombre positif:`));
 let resutatRacine = Math.sqrt(positiveNumber);
 
 alert(`Calcul de la racine carrée de nombre ${positiveNumber}: ${resutatRacine.toFixed(2)}.`)

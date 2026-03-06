@@ -27,7 +27,7 @@ Affichez le résultat avec une alerte.
 Le résultat doit avoir 2 chiffres décimaux*/
 
 
-let prix = prompt("Le prix hors TVA:");
+let prix = prompt("Ex #2. Le prix hors TVA:");
 prix = parseFloat(prix);
 let prixTva = prix * 1.21;
 alert(`Le prix avec TVA est: ${prixTva.toFixed(2)}`);
@@ -44,7 +44,7 @@ Calculez la surface du cercle en utilisant la formule appropriée.
 Affichez le résultat avec une alerte.*/
 
 
-let radius = parseFloat(prompt("Entrez le rayon du cercle:"));
+let radius = parseFloat(prompt("Ex #3. Entrez le rayon du cercle:"));
 let resultat = Math.PI * radius ** 2;
 alert(`l'aire du cercle de rayon ${radius} est de : ${resultat.toFixed(2)}`);
 
@@ -59,7 +59,7 @@ Stockez ce premier nombre.
 Demandez à l'utilisateur d'entrer un deuxième nombre.
 Stockez ce deuxième nombre et répondez avec la somme en utilisant une alerte.*/
 
-let firstNumber = Number(prompt("Entrer un premier nombre:"));
+let firstNumber = Number(prompt("Exercise 4.\nEntrer un premier nombre:"));
 let secondNumber = Number(prompt("Entrer un deuxième nombre:"));
 let resultatAddition = firstNumber + secondNumber;
 

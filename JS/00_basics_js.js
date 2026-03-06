@@ -89,6 +89,8 @@ Boolean("hello"); // true dans ce cas et pout n'importe quel cas, sauf :
 
 // TOUTES les valeurs sont truthy (donc : equivalent booléen vaut true) sauf les valeurs ci-dessus. (falsy)
 
+let valeurRetourneeDeLaBaseDeDonnee
+
 if (valeurRetourneeDeLaBaseDeDonnee) {
     console.log("hello");
 } else {

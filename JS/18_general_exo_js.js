@@ -13,7 +13,10 @@ Par exemple :
 9 et 56*/
 
 
-const firstNumber = Number(prompt("Entrez le premier nombre entier :"));
+console.log("General exercises:");
+console.log("\nExercice 1:");
+
+const firstNumber = Number(prompt("Exercise 1:\nEntrez le premier nombre entier :"));
 const secondNumber = Number(prompt("Entrez le deuxième nombre entier :"));
 
 // Vérification si ce sont bien des nombres
@@ -22,9 +25,9 @@ if (isNaN(firstNumber) || isNaN(secondNumber)) {
 } else {
   // Vérification si la somme est égale à 65
   if (firstNumber + secondNumber === 65) {
-    console.log(true);
+    console.log(`Somme égal à 65 : ${true}`);
   } else {
-    console.log(false);
+    console.log(`Somme égal à 65 : ${false}`);
   }
 }
 
@@ -90,12 +93,19 @@ function analyzeArray(arr) {
   // Tableau final contenant les résultats
   const finalArray = [max, min];
 
-  console.log(`Le plus grand est ${finalArray[0]} et le plus petit est ${finalArray[1]}`);
+  console.log("\nExercice 3:");
+  console.log(`Le plus grand dans le tableau est ${finalArray[0]} et le plus petit est ${finalArray[1]}`);
+
+  return finalArray;
 }
 
 // Tests
 analyzeArray([6, 1, 8, 5, 3, 9, 7]);
 analyzeArray([5, 3, 7]);
+
+console.log("\nLes tableaux testés:");
+console.log(analyzeArray([6, 1, 8, 5, 3, 9, 7]));
+console.log(analyzeArray([5, 3, 7]));
 
 
 /*04.
@@ -116,6 +126,7 @@ const minutes = 31;
 // 1 minute = 60 secondes
 const totalFrames = fps * minutes * 60;
 
+console.log("\nExercice 4:");
 console.log(`Total frames: ${totalFrames}`);
 
 
@@ -145,6 +156,8 @@ for (let i = words.length - 1; i >= 0; i--) {
 // 3. Reformer une phrase
 const result = reversedWords.join(" ");
 
+console.log("\nExercice 5:");
+console.log("La phrase inversée:");
 console.log(result);
 
 
@@ -175,7 +188,8 @@ for (let i = 0; i < shoppingList.length; i++) {
   total += shoppingList[i].quantity * shoppingList[i].price;
 }
 
-console.log(total.toFixed(2) + "€");
+console.log("\nExercice 6:");
+console.log(`le prix total des courses: ${total.toFixed(2)}€`);
 
 
 /*07.
@@ -198,7 +212,8 @@ for (let i = 0; i < str1.length; i++) {
   }
 }
 
-console.log(result1); // "chat"
+console.log("\nExercice 7:");
+console.log(`"UcUNFhYGaFYFYGtNUH" ==> ${result1}`); // "chat"
 
 
 
@@ -217,6 +232,7 @@ const number1 = 4589;
 // Un nombre n’a pas de propriété length, mais une chaîne de caractères oui
 const digitsCount = number1.toString().length;
 
+console.log("\nExercice 8:");
 console.log(digitsCount);
 
 console.log((56).toString().length);     // 2
@@ -232,6 +248,7 @@ while (number2 > 0) {
   count++;
 }
 
+console.log("Version algorithmique sans convertir en string:");
 console.log(count);
 
 // En système décimal (base 10), chaque chiffre représente une puissance de 10
@@ -266,4 +283,6 @@ for (let i = 1; i <= qte; i++) {
   resultMultiples.push(nombre * i);
 }
 
+console.log("\nExercice 9:");
+console.log(`Les multiples de nombre ${nombre}:`);
 console.log(resultMultiples);

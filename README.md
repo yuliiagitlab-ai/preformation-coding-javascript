@@ -26,7 +26,12 @@ All practice files are located in the `JS` folder.
 
 ## How to Run
 
-Open `index.html` in your browser and use the interactive selector to run different scripts.
+1. Open `index.html` in your browser.
+2. Use the interactive selector to run different scripts.
+3. Press **F12** to open the browser console and view the results.
+
+Live demo:  
+https://yuliiagitlab-ai.github.io/preformation-coding-javascript/
 
 ---
 
